@@ -5,7 +5,7 @@ import org.apache.spark.mllib.classification.ClassificationModel
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import util.CSVUtil
+import utils.CSVUtil
 
 trait GenericPredictor {
   def loadData(dataSet: String, ss: SparkSession): DataFrame = {
